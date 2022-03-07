@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <script type="text/javascript" src="nav.js"></script>
+
+<div id="content">
+    <h1>Javascript Parsing</h1>
+    <p>You can change different types of data to other types using parsing. An example of this is the following:</p>
+    <code>// Exercise 1 - Add numbers from string to float<br>
+
+        const numberOne = "1.10";<br>
+        const numberTwo = "2.30";<br>
+        
+        // add those two numbers and show the result<br>
+        // you cannot touch line 1 neither line 2<br>
+        
+        console.log(parseFloat(numberOne) + parseFloat(numberTwo));</code>
+    <p>Here the two constants <code>numberOne</code> and <code>numberTwo</code> are strings, that become parsed using <code>parseFloat()</code> as floats, allowing them to be added together.</p>
+    <p>Another example of this is using the <code>json.parse</code> function in node to turn strings into json and <code>json.stringify</code> to turn json into strings.</p>
+
+    <h2></h2>
+</div>
+
+</body>
+</html>

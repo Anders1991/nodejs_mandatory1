@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Beleren';
+   src: url(fonts/Beleren-Bold.ttf) format('truetype');
+   font-weight: normal;
+    font-style: normal;
+ }
+
+ @font-face {
+  font-family: 'Lobster';
+   src: url(fonts/Lobster-Regular.ttf) format('truetype');
+   font-weight: normal;
+    font-style: normal;
+ }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    row-gap: 20%;
+  }
+
+  .logo img{
+      max-height: 50px;
+      max-width: 50px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(100, 0, 100);
+    padding: 10px;
+  }
+
+  .items {
+    display: flex;
+  }
+
+  .nav-item {
+    transform: skew(-5deg, -5deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px black;
+    padding: 10px;
+    color: white;
+    font-family: "Beleren", "sans-serif";
+    font-size: 16px;
+    text-decoration: none;
+    background-color: rgb(100, 0, 100);
+  }
+
+  .nav-item:hover {
+    font-size: 20px;
+    max-height: 15px;
+    max-width: 80px;
+  }
+
+  #content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h1, h2 {
+    font-family: "Lobster", "Arial";
+  }
+
+  p, a {
+    font-family: "Helvetica";
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  code {
+    background-color: black;
+    color: white;
+    padding: 5px;
+  }

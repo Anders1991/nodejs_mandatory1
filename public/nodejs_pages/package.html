@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <script type="text/javascript" src="nav.js"></script>
+
+<div id="content">
+    <h1>nodejs Package.json</h1>
+    <h2>What is it?</h2>
+    <p>The package.json file is where we define our dependencies such as the external library Express. We also define the version of nodejs we want.</p>
+    <p>We also define scripts we can run from the terminal. When hosting on Heroku it is sometimes necessary to include the following script to run the server:</p>
+    <code>"scripts": {
+        "start": "node app.js"
+    }</code>
+    <p>The only thing it does is run the file app.js (which is very important!).</p>
+</div>
+</body>
+</html>

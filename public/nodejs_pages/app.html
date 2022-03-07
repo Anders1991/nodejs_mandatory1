@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <script type="text/javascript" src="nav.js"></script>
+
+<div id="content">
+    <h1>nodejs app.js</h1>
+    <h2>What is it?</h2>
+    <p>This file is where we define all of our server routing, which port the server should listen to and what it should do with certain calls.</p>
+    <h2>Setting up</h2>
+    <p>First we need to import the library express as follows:</p>
+    <code>const { json } = require("express");<br>
+        const express = require("express");</code>
+    <p>We then make an instantiated instance of express</p>
+    <code>app.use(express.json());</code>
+    <p>Now we can start using express to handle http requests for our server. As such lets take a look at the following code:</p>
+    <code>app.get("/", (req, res) => {<br>
+    
+        res.sendFile('index.html',{root:'public'});<br>
+    
+    });</code>
+    <p>Here we ask express to handle a GET request for our server, by <b>res</b>ponding with sending the file index.html to the user.</p>
+    <p>We could also <b>req</b>uire some data from the user, and send something appropriate back. </p>
+    <p>Last but not least we should allow the server to run on a port:</p>
+    <code>app.listen(8080);</code>
+    <p>Here we ask express to listen to the port 8080 (localhost) for our app.</p>
+</div>
+</body>
+</html>
