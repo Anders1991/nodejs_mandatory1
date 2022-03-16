@@ -15,6 +15,7 @@
   body {
     margin: 0;
     padding: 0;
+    background-color:rgba(100, 0, 100, 0.100);
   }
 
   .logo {
@@ -64,6 +65,29 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 5%;
+  }
+
+  .contentFrame {
+    border: 1px dashed rgb(226, 226, 226);
+    margin-bottom: 15px;
+    width: 50%;
+    padding: 25px;
+    background-color: white;
+  }
+
+  .contentFrame h1 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .backLink {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Lobster';
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
   }
 
   h1, h2 {
@@ -74,20 +98,22 @@
     font-family: "Helvetica";
   }
 
-  .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-
   .inner-container {
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     flex-direction: column;
     padding: 20px;
   }
 
-  code {
+  .inner-container a {
+    width: auto;
+  }
+
+  .codeStyling {
     background-color: black;
     color: white;
-    padding: 5px;
+    border-radius: 5px;
+    padding: 2%;
+    width: 96%;
   }

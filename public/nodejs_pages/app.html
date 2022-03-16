@@ -8,26 +8,43 @@
     <script type="text/javascript" src="nav.js"></script>
 
 <div id="content">
+    <div class="contentFrame">
     <h1>nodejs app.js</h1>
+    </div>
+    <div class="contentFrame">
     <h2>What is it?</h2>
     <p>This file is where we define all of our server routing, which port the server should listen to and what it should do with certain calls.</p>
+    </div>
+    <div class="contentFrame">
     <h2>Setting up</h2>
     <p>First we need to import the library express as follows:</p>
+    <div class="codeStyling">
     <code>const { json } = require("express");<br>
         const express = require("express");</code>
+    </div>
     <p>We then make an instantiated instance of express</p>
+    <div class="codeStyling">
     <code>app.use(express.json());</code>
+    </div>
     <p>Now we can start using express to handle http requests for our server. As such lets take a look at the following code:</p>
+    <div class="codeStyling">
     <code>app.get("/", (req, res) => {<br>
     
         res.sendFile('index.html',{root:'public'});<br>
     
     });</code>
+    </div>
     <p>Here we ask express to handle a GET request for our server, by <b>res</b>ponding with sending the file index.html to the user.</p>
     <p>We could also <b>req</b>uire some data from the user, and send something appropriate back. </p>
     <p>Last but not least we should allow the server to run on a port:</p>
+    <div class="codeStyling">
     <code>app.listen(8080);</code>
+    </div>  
     <p>Here we ask express to listen to the port 8080 (localhost) for our app.</p>
+    </div>
+    <div class="contentFrame">
+        <a class="backLink" href="/">Back</a>
+    </div>
 </div>
 </body>
 </html>

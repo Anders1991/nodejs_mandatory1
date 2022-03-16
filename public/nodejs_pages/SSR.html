@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <script type="text/javascript" src="nav.js"></script>
+
+    <div id="content">
+        <div class="contentFrame">
+            <h1>SSR</h1>
+        </div>
+        <div class="contentFrame">
+            <h2>What is it?</h2>
+            <p><b>SSR</b> is short for "Serverside Rendering" as opposed to 
+                <b>CSR</b> which is short for "Clientside Rendering". 
+                Serverside Rendering causes the server to load the page before it sends it to the user 
+                (as opposed to CSR where the page is loaded in the browser on the clients machine).</p>
+        </div>
+        <div class="contentFrame">
+            <p>Below is a list of pros and cons of SSR</p>
+            <h2>Pros</h2>
+            <p><b>Faster initial access</b></p>
+            <p>The pages are rendered immediately, even on slow internet connections because the browser doesn't have to load the javascript before it sends the page.</p>
+            <p><b>Better SEO</b></p>
+            <p>Search engines don't have to run your javascript before they index your site.</p>
+            <h2>Cons</h2>
+            <p><b>Pricier servers</b></p>
+            <p>SSR requires better and bigger servers than CSR, because it is more dependant on internet speed.</p>
+            <p><b>High user traffic = slower for everyone</b></p>
+        </div>
+        <div class="contentFrame">
+            <a class="backLink" href="/">Back</a>
+        </div>  
+    </div>
+</body>
+</html>

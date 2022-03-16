@@ -8,9 +8,38 @@
     <script type="text/javascript" src="nav.js"></script>
 
 <div id="content">
+    <div class="contentFrame">
     <h1>Rest API</h1>
-    <h2>What is it?</h2>
-    <p></p>
+    </div>
+    <div class="contentFrame">
+        <h2>What is it?</h2>
+        <p>A REST API (Representational State Transfer Application Programming Interface) 
+        is a data collection accessible by HTTP requests. As an example, 
+        to get the information from a JSON Rest API you would have to
+         send a GET HTTP request to the server that has the data.</p>
+        </div>
+    <div class="contentFrame">    
+        <h2>CRUD</h2>
+        <p>the CRUD operations are Create, Read, Update, Delete. To use these operations on an URL endpoint in nodejs do the following:</p>
+        <p>When you want to <b>Create</b> new data use a <b>POST request</b>, to post new data.</p>
+        <p>When you want to <b>Read</b> data from the API use a <b>GET request</b>, to retrieve data.</p>
+        <p>When you want to <b>Update</b> data in the API use a <b>PUT request</b>, to update the data.</p>
+        <p>When you want to <b>Delete</b> data from the API use a <b>DELETE request</b>, to remove the data.</p>
+        <h2>Nodejs example</h2>
+        <div class="codeStyling">
+        <code>
+            app.post("/name-of-the-endpoint", (req, res) => {<br>
+            <br>
+            //put your code here<br>
+            <br>
+            res.send();<br>
+            });
+        </code>
+        </div>  
+    </div>
+    <div class="contentFrame">
+        <a class="backLink" href="/">Back</a>
+    </div>
 </div>
 </body>
 </html>

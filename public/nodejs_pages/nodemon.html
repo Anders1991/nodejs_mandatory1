@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <script type="text/javascript" src="nav.js"></script>
+
+    <div id="content">
+        <div class="contentFrame">
+        <h1>Nodemon</h1>
+        </div>
+    <div class="contentFrame">
+        <h2>What is it?</h2>
+        <p>Nodemon is a node module that is useful while developing a nodejs server. 
+            Nodemon automatically restarts the server whenever you make changes to the code, 
+            allowing you to see the changes.</p>
+    </div>
+    <div class="contentFrame">
+        <h2>Setting up</h2>
+        <p>To use Nodemon you must first install it. Simply run the following terminal command:</p>
+        <div class="codeStyling">
+            <code>npm install nodemon</code>
+        </div>
+        <p>Head to your package.json file and add the following code:</p>
+        <div class="codeStyling">
+            <code>"scripts": {<br>
+                "dev": "nodemon app.js"<br>
+            }
+            </code>
+        </div>
+    </div>
+    <div class="contentFrame">
+        <h2>Using Nodemon</h2>
+        <p>to start Nodemon use the following terminal command:</p>
+        <div class="codeStyling">
+            <code>npm run dev</code>
+        </div>
+        <p>This lets Nodemon know it should run the app.js file (because we declared it above).</p>
+    </div>
+    <div class="contentFrame">
+        <a class="backLink" href="/">Back</a>
+    </div>    
+    </div>
+</body>
+</html>

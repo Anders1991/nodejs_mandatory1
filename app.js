@@ -11,47 +11,50 @@ app.use(express.json());
 // serve the static content
 app.use(express.static("ui/"));
 
+const fs = require("fs");
+
+const frontPage = fs.readFileSync("./public/index.html").toString();
+const packagePage = fs.readFileSync("./public/nodejs_pages/package.html").toString();
+const appPage = fs.readFileSync("./public/nodejs_pages/app.html").toString();
+const restAPIPage = fs.readFileSync("./public/nodejs_pages/restAPI.html").toString();
+const nodemonPage = fs.readFileSync("./public/nodejs_pages/nodemon.html").toString();
+const SSRPage = fs.readFileSync("./public/nodejs_pages/SSR.html").toString();
+
 //Index
 app.get("/", (req, res) => {
     
-    res.sendFile('index.html',{root:'public'});
+    res.send(frontPage);
 
-});
-
-app.get("/parsing", (req, res) => {
-     
-    res.sendFile('parsing.html', {root:'public/javascript_pages'}) 
-    
-});
-
-app.get("/objects", (req, res) => {
-     
-    res.sendFile('objects.html', {root:'public/javascript_pages'}) 
-    
 });
 
 app.get("/package", (req, res) => {
      
-    res.sendFile('package.html', {root:'public/nodejs_pages'}) 
+    res.send(packagePage); 
     
 });
 
 app.get("/app", (req, res) => {
      
-    res.sendFile('app.html', {root:'public/nodejs_pages'}) 
+    res.send(appPage); 
     
 });
 
 app.get("/restAPI", (req, res) => {
      
-    res.sendFile('restAPI.html', {root:'public/nodejs_pages'}) 
+    res.send(restAPIPage); 
     
 });
 
 app.get("/nodemon", (req, res) => {
      
-    res.sendFile('nodemon.html', {root:'public/nodejs_pages'}) 
+    res.send(nodemonPage); 
     
 });
 
-app.listen(process.env.PORT || 5000);
+app.get("/SSR", (req, res) => {
+     
+    res.send(SSRPage); 
+    
+});
+
+app.listen(process.env.PORT || 8080);
